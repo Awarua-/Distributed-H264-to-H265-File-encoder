@@ -1,0 +1,13 @@
+[package]
+name = "distributed_h264_to_h265_file_encoder"
+version = "0.0.1"
+authors = [ "Dion Woolley woolley.dion@gmail.com" ]
+
+[dependencies]
+log = "0.3"
+log4rs = "0.5"
+env_logger = "0.3"
+
+[dependencies.clap]
+clap = "2"
+features = ["suggestions", "color", "wrap_help", "yaml", "unstable"]
