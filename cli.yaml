@@ -1,13 +1,22 @@
 name: Distributed H264 to H265 file encoder
-version: 1.0
+version: "1.0"
 author: Dion Woolley. <woolley.dion@gmail.com>
 about: Does awesome things
 args:
     - SRC_DIR:
         help: Source directory to look for file to transcode.
         required: true
+        value_name: DIR
         index: 1
     - verbose:
         short: v
         multiple: true
         help: Sets the level of verbosity
+    - TEMP_DIR:
+        help: Directory for temp storing of transcoded files.
+        required: true
+        value_name: DIR
+        index: 2
+    - reverse:
+        help: Should reverse files.
+        short: r

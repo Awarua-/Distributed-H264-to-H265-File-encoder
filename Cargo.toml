@@ -1,13 +1,18 @@
 [package]
 name = "distributed_h264_to_h265_file_encoder"
+description = "Distributed transcoder for h264 to h265"
 version = "0.0.1"
 authors = [ "Dion Woolley woolley.dion@gmail.com" ]
+repository = "https://github.com/Awarua-/Distributed-H264-to-H265-File-encoder.git"
+license-file = "LICENSE"
+include = ["config/log4rs.yaml", "config/cli.yaml"]
 
 [dependencies]
 log = "0.3"
 log4rs = "0.5"
 env_logger = "0.3"
+time = "0.1"
 
 [dependencies.clap]
-clap = "2"
+version = "~2.19.0"
 features = ["suggestions", "color", "wrap_help", "yaml", "unstable"]
